@@ -27,8 +27,9 @@ def calcular_precio(cliente_vip, temporada_alta, equipo_nieve, camioneta, cargo_
         base -= 1000
     if cargo_zona:
         base += 2500
+    seguro = 2000     
     precio_dias = respuesta_dias * dia
-    total = base + precio_dias
+    total = base + precio_dias + seguro
     return total
 
 
